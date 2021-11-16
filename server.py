@@ -23,6 +23,7 @@ def repeat(times, word):
    print(output) 
    return output
 
+# catch-all route. (SENSEI BONUS)
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def catch_all(path):
